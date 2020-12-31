@@ -1,6 +1,6 @@
 package test;
 
-import org.testng.annotations.AfterTest;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -22,6 +22,15 @@ public class TestNgBasic5 {
 	      .getClass()
 	      .getEnclosingMethod()
 	      .getName());
+	}
+	
+	@Test(timeOut = 4000)
+	public void test10() {
+		System.out.println(new Object() {}
+	      .getClass()
+	      .getEnclosingMethod()
+	      .getName());
+		Assert.assertTrue(false);
 	}
 	
 	@DataProvider

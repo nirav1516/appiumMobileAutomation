@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNGSuite">
+<parameter name="URL" value="http://facebook.com"></parameter>
+<parameter name="num1" value="10"></parameter>
+<listeners>
+	<listener class-name="test.TestNgBasic6_Listener"></listener>
+</listeners>
+  <test thread-count="5" name="Basic">
+  <parameter name="num1" value="90"></parameter>
+    <classes>
+      <class name="test.TestNgBasic"/>
+      <class name="test.TestNgBasic2"/>
+    </classes>
+  </test>
+  <test thread-count="5" name="Advance">
+  <parameter name="advanceUrl" value="http://google.com"></parameter>
+    <classes>
+      <class name="test.TestNgBasic3">
+      	<methods>
+      		<exclude name="test.*"></exclude>
+      	</methods>
+      </class>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Elite">
+    <classes>
+      <class name="test.TestNgBasic4">
+      	<methods>
+      		<include name="test5"></include>
+      	</methods>
+      </class>
+      <class name="test.TestNgBasic5"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
