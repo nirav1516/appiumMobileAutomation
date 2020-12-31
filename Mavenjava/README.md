@@ -11,11 +11,8 @@
 
 #maven - run testng.xml
 > Add configuration section under surefire nodes  
-<configuration>
-    <suiteXmlFiles>
-		<suiteXmlFile>testng.xml</suiteXmlFile> <!-- This should be the path of the xml file -->
-	</suiteXmlFiles>
-</configuration>
+> Visit - https://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
 
 #maven - run a single file
-> mvn -Dtest=AppiumTest test #AppiumTest should be replaced by file name to be run
+> mvn -Dtest=AppiumTest test #AppiumTest should be replaced by file name to be run  
+> Visit - https://maven.apache.org/surefire/maven-surefire-plugin/examples/single-test.html
