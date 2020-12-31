@@ -27,4 +27,20 @@ public class TestNgBasic3 {
 	      .getEnclosingMethod()
 	      .getName());
 	}
+	
+	@Test 
+	public void uniqueMethod() {
+		System.out.println(new Object() {}
+	      .getClass()
+	      .getEnclosingMethod()
+	      .getName());
+	}
+	
+	@Test 
+	public void mytest() {
+		System.out.println(new Object() {}
+	      .getClass()
+	      .getEnclosingMethod()
+	      .getName());
+	}
 }

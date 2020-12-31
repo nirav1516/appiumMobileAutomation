@@ -20,7 +20,7 @@ public class TestNgBasic4 {
 	      .getName());
 	}
 	
-	@Test 
+	@Test (groups = {"smoke"})
 	public void test6() {
 		System.out.println(new Object() {}
 	      .getClass()
