@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -30,7 +31,7 @@ public class TestNgBasic {
 	}
 	
 	@BeforeTest(groups = {"smoke","healthcheck"})
-	public void preReq() {
+	public void BeforeTest() {
 		System.out.println(new Object() {}
 	      .getClass()
 	      .getName()+" --> "+new Object() {}
@@ -53,6 +54,17 @@ public class TestNgBasic {
 	
 	@AfterSuite
 	public void afterEntireSuite() {
+		System.out.println(new Object() {}
+	      .getClass()
+	      .getName()+" --> "+new Object() {}
+	      .getClass()
+	      .getEnclosingMethod()
+	      .getName());
+		
+	}
+	
+	@AfterTest
+	public void afterALLtest() {
 		System.out.println(new Object() {}
 	      .getClass()
 	      .getName()+" --> "+new Object() {}

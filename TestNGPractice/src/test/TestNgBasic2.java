@@ -12,6 +12,18 @@ public class TestNgBasic2 {
 		System.out.println("Rutik");
 	}
 	
+	
+	@BeforeTest(groups = {"smoke","healthcheck"})
+	public void BeforeTest() {
+		System.out.println(new Object() {}
+	      .getClass()
+	      .getName()+" --> "+new Object() {}
+	      .getClass()
+	      .getEnclosingMethod()
+	      .getName());
+		
+	}
+	
 	@BeforeSuite(groups = {"smoke"})
 	public void beforeEntireSuite() {
 		System.out.println(new Object() {}

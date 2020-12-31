@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class TestNgBasic4 {
@@ -12,7 +13,7 @@ public class TestNgBasic4 {
 	      .getName());
 	}
 	
-	@Test 
+	@Test(enabled = false) 
 	public void test5() {
 		System.out.println(new Object() {}
 	      .getClass()
@@ -26,5 +27,16 @@ public class TestNgBasic4 {
 	      .getClass()
 	      .getEnclosingMethod()
 	      .getName());
+	}
+	
+	@AfterTest
+	public void afterALLtest() {
+		System.out.println(new Object() {}
+	      .getClass()
+	      .getName()+" --> "+new Object() {}
+	      .getClass()
+	      .getEnclosingMethod()
+	      .getName());
+		
 	}
 }
