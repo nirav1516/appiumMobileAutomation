@@ -1,16 +1,19 @@
 package test;
 
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class TestNgBasic5 {
 
-	@Test(enabled = false)
-	public void test8() {
+	@Test(dataProvider = "getData")
+	public void test8(String userName,String passWord) {
 		System.out.println(new Object() {}
 	      .getClass()
 	      .getEnclosingMethod()
 	      .getName());
+		System.out.println("userName: "+userName);
+		System.out.println("passWord: "+passWord);
 	}
 	
 	@Test(timeOut = 4000)
@@ -19,6 +22,19 @@ public class TestNgBasic5 {
 	      .getClass()
 	      .getEnclosingMethod()
 	      .getName());
+	}
+	
+	@DataProvider
+	public Object getData() {
+		Object[][] data = new Object[3][2];
+		
+		for (int i=0;i<data.length;i++) {
+			for(int j=0;j<data[0].length;j++) {
+				data[i][j] = (j%2==0)? "username"+i:"password"+i;
+			}
+		}
+		return data;
+		
 	}
 	
 
