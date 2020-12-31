@@ -4,7 +4,8 @@
   <test thread-count="5" name="Basic">
   <groups>
   	<run>
-  		<include name="healthcheck"></include>
+  		<!-- <include name="healthcheck"></include> -->
+  		<exclude name="healthcheck"></exclude>
   	</run>
   </groups>
   <classes>
