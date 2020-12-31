@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class TestNgBasic3 {
 
-	@Test
+	@Test(groups = {"depends","healthcheck"},dependsOnMethods = {"test2","test3"})
 	public void test1() {
 		System.out.println(new Object() {}
 	      .getClass()
@@ -12,7 +12,7 @@ public class TestNgBasic3 {
 	      .getName());
 	}
 	
-	@Test 
+	@Test (groups = {"depends","healthcheck"},dependsOnMethods = {"test3"})
 	public void test2() {
 		System.out.println(new Object() {}
 	      .getClass()
@@ -20,7 +20,7 @@ public class TestNgBasic3 {
 	      .getName());
 	}
 	
-	@Test 
+	@Test (groups = {"depends"})
 	public void test3() {
 		System.out.println(new Object() {}
 	      .getClass()
