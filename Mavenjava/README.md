@@ -10,7 +10,7 @@
 > mvn test  
 
 #maven - run testng.xml
-Add configuration section under surefire nodes  
+> Add configuration section under surefire nodes  
 <configuration>
     <suiteXmlFiles>
 		<suiteXmlFile>testng.xml</suiteXmlFile> <!-- This should be the path of the xml file -->
