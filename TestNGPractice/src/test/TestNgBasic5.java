@@ -13,7 +13,7 @@ public class TestNgBasic5 {
 	      .getName());
 	}
 	
-	@Test
+	@Test(timeOut = 4000)
 	public void test9() {
 		System.out.println(new Object() {}
 	      .getClass()
