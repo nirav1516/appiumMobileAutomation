@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TestNgBasic {
-	@Test
+	@Test(groups = {"smoke","healthcheck"})
 	public void demo(){
 		System.out.println("nirav");
 	}
