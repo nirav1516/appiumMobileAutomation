@@ -11,7 +11,7 @@
     <classes>
       <class name="test.TestNgBasic3">
       	<methods>
-      		<!-- <exclude name="test2"></exclude> -->
+      		<exclude name="test.*"></exclude>
       	</methods>
       </class>
       
