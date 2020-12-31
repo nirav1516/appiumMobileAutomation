@@ -1,16 +1,16 @@
 # Maven
-> Central repo for dependencies
-> Structure management
-> Integration with CI tools
-> Support for test frameworks
+> Central repo for dependencies  
+> Structure management  
+> Integration with CI tools  
+> Support for test frameworks  
 
 #maven compile and run steps
-> mvn clean
-> mvn compile
-> mvn test
+> mvn clean  
+> mvn compile  
+> mvn test  
 
 #maven - run testng.xml
-Add configuration section under surefire nodes
+Add configuration section under surefire nodes  
 <configuration>
     <suiteXmlFiles>
 		<suiteXmlFile>testng.xml</suiteXmlFile> <!-- This should be the path of the xml file -->
