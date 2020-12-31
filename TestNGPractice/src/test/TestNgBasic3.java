@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class TestNgBasic3 {
@@ -28,12 +29,15 @@ public class TestNgBasic3 {
 	      .getName());
 	}
 	
+	@Parameters({"URL","num1","advanceUrl"})
 	@Test 
-	public void uniqueMethod() {
+	public void uniqueMethod(String url,String num1,String advUrl) {
 		System.out.println(new Object() {}
 	      .getClass()
 	      .getEnclosingMethod()
 	      .getName());
+		System.out.println(url);
+		System.out.println(advUrl);
 	}
 	
 	@Test 

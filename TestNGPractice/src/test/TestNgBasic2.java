@@ -4,12 +4,17 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class TestNgBasic2 {
+	@Parameters({"URL","num1"})
 	@Test
-	public void demo3() {
-		System.out.println("Rutik");
+	public void demo3(@Optional String url1,int url2) {
+		System.out.println("Rutik with param");
+		System.out.println(url1);
+		System.out.println(url2);
 	}
 	
 	
