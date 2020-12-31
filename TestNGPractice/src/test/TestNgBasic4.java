@@ -13,7 +13,7 @@ public class TestNgBasic4 {
 	      .getName());
 	}
 	
-	@Test(enabled = false) 
+	@Test
 	public void test5() {
 		System.out.println(new Object() {}
 	      .getClass()
