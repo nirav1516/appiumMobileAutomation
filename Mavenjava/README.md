@@ -16,3 +16,6 @@
 #maven - run a single file
 > mvn -Dtest=AppiumTest test #AppiumTest should be replaced by file name to be run  
 > Visit - https://maven.apache.org/surefire/maven-surefire-plugin/examples/single-test.html
+
+#maven - run specific profile from pom.xml
+> mvn test -P smoke, where 'smoke' is any profile if in pom file
