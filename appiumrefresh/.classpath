@@ -17,5 +17,7 @@
 	<classpathentry kind="lib" path="D:/AppiumLearnings/appiumrefresh/referredLibs/commons-lang3-3.11.jar"/>
 	<classpathentry kind="lib" path="D:/AppiumLearnings/appiumrefresh/referredLibs/Setup.jar"/>
 	<classpathentry kind="lib" path="D:/AppiumLearnings/appiumrefresh/referredLibs/junit-4.13.1.jar"/>
+	<classpathentry kind="lib" path="D:/AppiumLearnings/appiumMobileAutomation/appiumrefresh/referredLibs/cglib-3.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/AppiumLearnings/appiumMobileAutomation/appiumrefresh/referredLibs/asm-9.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
